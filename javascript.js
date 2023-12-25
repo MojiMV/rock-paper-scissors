@@ -44,11 +44,11 @@ function game(){
     let losses = 0;
 
     for (let i = 0; i<5 ; i++){
-        playOneRound();
-        if (playOneRound === true){
+        x = playOneRound();
+        if (x === true){
             wins = wins + 1;
             alert("You won this round!");
-        } else if (playOneRound === false){
+        } else if (x === false){
             losses = losses + 1;
             alert("You lost this round!");
         }
