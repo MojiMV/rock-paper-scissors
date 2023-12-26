@@ -1,11 +1,11 @@
 function getComputerChoice() {
-    choices = ["rock", "paper", "scissors"];
+    const choices = ["rock", "paper", "scissors"];
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
 
 function getUserChoice(){
-    choice = prompt("Make your choice (rock, paper, scissors)");
+    let choice = prompt("Make your choice (rock, paper, scissors)");
     choice = choice.toLowerCase()
     if (choice === "rock" || choice === "paper" || choice === "scissors"){
         return choice;
@@ -16,9 +16,9 @@ function getUserChoice(){
 
 function playOneRound() {
 
-    playerSelection = getUserChoice();
+    const playerSelection = getUserChoice();
     console.log(playerSelection);
-    computerSelection = getComputerChoice();
+    const computerSelection = getComputerChoice();
     console.log(computerSelection);
 
 
@@ -50,8 +50,7 @@ function game(){
     console.log(losses);
 
     for (let i = 0; i<5 ; i++){
-        x = playOneRound();
-        if (x){
+        if (playOneRound()){
             wins = wins + 1;
             alert("You won this round!");
             
