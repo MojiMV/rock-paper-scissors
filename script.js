@@ -11,6 +11,7 @@ function getUserChoice(){
         return choice;
     } else {
         alert("Wrong choice"); // bug to fix! when its a wrong choice, you just lose that round
+        return getUserChoice();
     }  
 }
 
