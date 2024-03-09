@@ -21,3 +21,7 @@ create a playOneRound function that gets computer's choice and player's choice a
 
 create a game function that declares two variables called wins and losses first and assigns zero to them. then runs the playOneRond function for 5 times in a for loop and each time its TRUE, it adds 1 to wins and tells the user they won that round and each time its false, it adds 1 to losses and tells the user they lost that round
 at the end of the function, it compares losses and wins and tells the user if they won or lost overall
+
+======================================================================================================================
+
+pseudocode for the new version ( with UI )

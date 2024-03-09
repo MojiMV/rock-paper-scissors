@@ -10,7 +10,7 @@ function getUserChoice(){
     if (choice === "rock" || choice === "paper" || choice === "scissors"){
         return choice;
     } else {
-        alert("Wrong choice"); // bug to fix! when its a wrong choice, you just lose that round
+        alert("Wrong choice");
         return getUserChoice();
     }  
 }
