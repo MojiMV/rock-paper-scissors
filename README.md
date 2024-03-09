@@ -25,3 +25,7 @@ at the end of the function, it compares losses and wins and tells the user if th
 ======================================================================================================================
 
 pseudocode for the new version ( with UI )
+
+create a function called getComputerChoice() that chooses a random choice
+
+create an Even listener which reacts to the buttons being clicked and runs a function called game() to play the game with one parameter being the users choice and the other parameter the getComputerChice() function

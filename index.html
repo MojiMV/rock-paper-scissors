@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="main-container">
@@ -14,14 +14,24 @@
 
         <div class="buttons">
 
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissors">Scissors</button>
+            <button id="rock" class="playBut">Rock</button>
+            <button id="paper" class="playBut">Paper</button>
+            <button id="scissors" class="playBut">Scissors</button>
 
         </div>
 
-        <footer class="footer">Made by Moji</footer>
+        <div class="result">
+            <div class="score-div">
+                <p class="user-score"></p>
+                <p class="computer-score"></p>
+            </div>
 
+            <p class="winner"></p>
+            
+            <button id="refresh">Refresh</button>
+        </div>
+
+        <footer id="footer">Made by Moji</footer>
     </div>
 </body>
 </html>
