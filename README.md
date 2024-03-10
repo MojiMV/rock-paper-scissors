@@ -28,4 +28,7 @@ pseudocode for the new version ( with UI )
 
 create a function called getComputerChoice() that chooses a random choice
 
-create an Even listener which reacts to the buttons being clicked and runs a function called game() to play the game with one parameter being the users choice and the other parameter the getComputerChice() function
+create an Even listener which reacts to the buttons being clicked and runs a function called game() to play the game with one parameter being the users choice and the other parameter the getComputerChice() function, also reacts to the refresh button which reloads the page after the game is finished (or at any point you want)
+
+game(): the game function should compare the choices and if the user wins +1 the wins and if the user loses, +1 the losses. and at the end it chech with an if statement if the the wins or losses have reached 5. if they have reached 5 then it chooses the winner and disables the play buttons
+

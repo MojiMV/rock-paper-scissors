@@ -39,15 +39,26 @@ function game(computerSelection, playerSelection){
     
 
     if (wins == 5){
-        winner.textContent = "You won!"
+        winner.textContent = "YOU WON!"
         playButs.forEach(button => {
             button.disabled = true;
         })
+        const winnerDiv = document.querySelector(".winnerDiv");
+        const refresh = document.createElement("button");
+        refresh.textContent = "Refresh";
+        refresh.setAttribute("id", "refresh")
+        winnerDiv.appendChild(refresh);
+
     } else if ( losses == 5){
-        winner.textContent = "You lost!"
+        winner.textContent = "YOU LOST!"
         playButs.forEach(button => {
             button.disabled = true;
-    })
+        })
+        const winnerDiv = document.querySelector(".winnerDiv");
+        const refresh = document.createElement("button");
+        refresh.textContent = "Refresh";
+        refresh.setAttribute("id", "refresh")
+        winnerDiv.appendChild(refresh);
     }
 
 }

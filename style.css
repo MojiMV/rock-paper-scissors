@@ -1,0 +1,135 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0%;
+    background-color: #EEEEEE ;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title{
+    color: #333333;
+    font-size: 42px;
+    font-family: "Aria", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.score-div{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-family: "Aria", sans-serif;
+    font-weight: bold;
+    margin-top: 75px;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+}
+
+.user .user-score{
+    align-self: center;
+    font-size: 32px;
+}
+
+.pc{
+    display: flex;
+    flex-direction: column;
+}
+
+.pc .computer-score{
+    align-self: center;
+    font-size: 32px;
+}
+
+.winnerDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.winner{
+    font-size: 20px;
+    font-family: "Aria", sans-serif;
+    font-weight: bold;
+}
+
+#refresh{
+    font-weight: bold;
+    border-style: solid;
+    border-color: #1C2F27;
+    transition: background-color 0.3s;
+}
+
+#refresh:hover{
+    background-color: #9c9c9c;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.playBut{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border-style: solid;
+    background-color: #1C2F27;
+    color: #FFFFFF;
+    border-color: #1C2F27;
+    transition: background-color 0.3s;
+    position: relative; /* Add position relative */
+}
+
+.playBut:hover{
+    background-color: #9c9c9c;
+    color: transparent;
+}
+
+.playBut:hover::before {
+    content: attr(data-emoji); /* Show emoji on hover */
+    color: white; /* Color of emoji */
+    font-size: 60px; /* Size of emoji */
+    position: absolute; /* Position the emoji */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the emoji */
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 20px;
+    background-color: #36454F;
+    color: #CCCCCC;
+    font-weight: bold;
+    font-family: "Aria", sans-serif;
+}

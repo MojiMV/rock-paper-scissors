@@ -12,26 +12,34 @@
 
         <h1 class="title">ROCK PAPER SCISSORS GAME</h1>
 
-        <div class="buttons">
+        <div class="score-div">
+            <div class="user">
+                <span>Your score:</span>
 
-            <button id="rock" class="playBut">Rock</button>
-            <button id="paper" class="playBut">Paper</button>
-            <button id="scissors" class="playBut">Scissors</button>
-
-        </div>
-
-        <div class="result">
-            <div class="score-div">
                 <p class="user-score"></p>
+            </div>
+            <div class="pc">
+                <span>PC score:</span>
+
                 <p class="computer-score"></p>
             </div>
-
-            <p class="winner"></p>
-            
-            <button id="refresh">Refresh</button>
         </div>
 
-        <footer id="footer">Made by Moji</footer>
+        <div class="winnerDiv">
+
+            <p class="winner"></p>
+
+        </div>
+
+        <div class="buttons">
+
+            <button id="rock" class="playBut" data-emoji="🪨">Rock</button>
+            <button id="paper" class="playBut" data-emoji="📄">Paper</button>
+            <button id="scissors" class="playBut" data-emoji="✂️">Scissors</button>
+
+        </div>
+
+        <footer class="footer">Made by Moji</footer>
     </div>
 </body>
 </html>
